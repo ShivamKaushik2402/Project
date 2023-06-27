@@ -1,0 +1,36 @@
+{
+    "VCAP_SERVICES": {
+        "hana": [
+            {
+                "label": "hana",
+                "provider": null,
+                "plan": "hdi-shared",
+                "name": "Chobani_Demo_Project-hdiChobWBfvw9T4vBLO79fl8GiAw",
+                "tags": [
+                    "hana",
+                    "database",
+                    "relational"
+                ],
+                "instance_guid": "e9f48b31-29e4-45be-9a93-487bec6642ec",
+                "instance_name": "Chobani_Demo_Project-hdiChobWBfvw9T4vBLO79fl8GiAw",
+                "binding_guid": "de70894a-4807-4582-9a85-a9e3f74bdb09",
+                "binding_name": null,
+                "credentials":{
+                    "url": "jdbc:sap://23af060f-4d9a-428d-8baa-0ec4ea2a5a6b.hana.trial-us10.hanacloud.ondemand.com:443?encrypt=true&validateCertificate=true&currentschema=CHOBANI_DEMO_PROJECT_HDI_CHOBANI_DEMO_PROJECT_DB_DEPLOYER_1",
+                    "certificate": "-----BEGIN CERTIFICATE-----\nMIIDrzCCApegAwIBAgIQCDvgVpBCRrGhdWrJWZHHSjANBgkqhkiG9w0BAQUFADBh\nMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3\nd3cuZGlnaWNlcnQuY29tMSAwHgYDVQQDExdEaWdpQ2VydCBHbG9iYWwgUm9vdCBD\nQTAeFw0wNjExMTAwMDAwMDBaFw0zMTExMTAwMDAwMDBaMGExCzAJBgNVBAYTAlVT\nMRUwEwYDVQQKEwxEaWdpQ2VydCBJbmMxGTAXBgNVBAsTEHd3dy5kaWdpY2VydC5j\nb20xIDAeBgNVBAMTF0RpZ2lDZXJ0IEdsb2JhbCBSb290IENBMIIBIjANBgkqhkiG\n9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4jvhEXLeqKTTo1eqUKKPC3eQyaKl7hLOllsB\nCSDMAZOnTjC3U/dDxGkAV53ijSLdhwZAAIEJzs4bg7/fzTtxRuLWZscFs3YnFo97\nnh6Vfe63SKMI2tavegw5BmV/Sl0fvBf4q77uKNd0f3p4mVmFaG5cIzJLv07A6Fpt\n43C/dxC//AH2hdmoRBBYMql1GNXRor5H4idq9Joz+EkIYIvUX7Q6hL+hqkpMfT7P\nT19sdl6gSzeRntwi5m3OFBqOasv+zbMUZBfHWymeMr/y7vrTC0LUq7dBMtoM1O/4\ngdW7jVg/tRvoSSiicNoxBN33shbyTApOB6jtSj1etX+jkMOvJwIDAQABo2MwYTAO\nBgNVHQ8BAf8EBAMCAYYwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUA95QNVbR\nTLtm8KPiGxvDl7I90VUwHwYDVR0jBBgwFoAUA95QNVbRTLtm8KPiGxvDl7I90VUw\nDQYJKoZIhvcNAQEFBQADggEBAMucN6pIExIK+t1EnE9SsPTfrgT1eXkIoyQY/Esr\nhMAtudXH/vTBH1jLuG2cenTnmCmrEbXjcKChzUyImZOMkXDiqw8cvpOp/2PV5Adg\n06O/nVsJ8dWO41P0jmP6P6fbtGbfYmbW0W5BjfIttep3Sp+dWOIrWcBAI+0tKIJF\nPnlUkiaY4IBIqDfv8NZ5YBberOgOzW6sRBc4L0na4UU+Krk2U886UAb3LujEV0ls\nYSEY1QSteDwsOoBrp+uvFRTp2InBuThs4pFsiv9kuXclVzDAGySj4dzp30d8tbQk\nCAUw7C29C79Fv1C5qfPrmAESrciIxpg0X40KPMbp1ZWVbd4=\n-----END CERTIFICATE-----",
+                    "database_id": "23af060f-4d9a-428d-8baa-0ec4ea2a5a6b",
+                    "driver": "com.sap.db.jdbc.Driver",
+                    "hdi_password": "Uq3tzxzEYHGIV2g-gR.ZCztdpE0GQT4UwB6rp8DWdCksFLufmPg-25xZtrId-QHxwsEpv94v_CJPcNNHqZZfDRITN5pN_5qfEjbLyEJX3tn8Yp7U.3L1RGj-vSsy_8q7",
+                    "hdi_user": "CHOBANI_DEMO_PROJECT_HDI_CHOBANI_DEMO_PROJECT_DB_DEPLOYER_1_EZELPEV6LB0WPZ07HZKSNG8F3_DT",
+                    "host": "23af060f-4d9a-428d-8baa-0ec4ea2a5a6b.hana.trial-us10.hanacloud.ondemand.com",
+                    "password": "Jj8UXClD3PJ-keFOST0j9a38oT8ctdYGrcV3i6YysGjE3Drzk4aUAA-BoKlmNt0zNinna-43bEOL6fK27M9TPaPqMvMLFjoTiGbmEE7837aSh0gUW2H2hmiNTBegssr3",
+                    "port": "443",
+                    "schema": "CHOBANI_DEMO_PROJECT_HDI_CHOBANI_DEMO_PROJECT_DB_DEPLOYER_1",
+                    "user": "CHOBANI_DEMO_PROJECT_HDI_CHOBANI_DEMO_PROJECT_DB_DEPLOYER_1_EZELPEV6LB0WPZ07HZKSNG8F3_RT"},
+                "syslog_drain_url": null,
+                "volume_mounts": []
+            }
+  ]
+
+}
+}
