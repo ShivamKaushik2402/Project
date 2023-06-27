@@ -1,6 +1,7 @@
 const express = require('express');
 app = express()
-const cds = require('@sap/cds')
+const cds = require('@sap/cds');
+const { request } = require('hdb/lib/protocol');
 
 
 class invoice extends cds.ApplicationService {
@@ -22,21 +23,21 @@ class invoice extends cds.ApplicationService {
                 // let approvedata = JSON.parse(data)
                 let approvedata = [
                     {
-                        "id":3332,
+                        "id":43332,
                         "items":"Rice",
                         "description": "food",
                         "quantity": 5,
                         "amount": 140
                     },
                     {
-                        "id":3333,
+                        "id":43333,
                         "items":"Wheat",
                         "description": "food",
                         "quantity": 10,
                         "amount": 150
                     },
                     {
-                        "id":3334,
+                        "id":43334,
                         "items":"barley",
                         "description": "food",
                         "quantity":15,
@@ -56,6 +57,13 @@ class invoice extends cds.ApplicationService {
 
                         let results =  await SELECT.from(invoice);
                     return results
+                })
+                this.on('READ','deletedata',async(req)=>{
+                    let del = await DELETE.from(invoice).where ({"id":3});
+                    console.log("the delete id is: "+ del);//here del return us a number which tells how many records it is deleting
+                    let results =  await SELECT.from(invoice);
+                    return results;
+
                 })
 
                 await super.init();
