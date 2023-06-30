@@ -36,7 +36,11 @@ service invoice {
         amount      : Integer;
     }
 
-    action rejectIdoc(data : String) returns {
+    action ExcelUpload(data : String) returns {
+        Status : Integer
+    };
+
+    action rejectIdoc(data : String)  returns {
         Status : Integer
     };
 }
